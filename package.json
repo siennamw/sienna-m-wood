@@ -1,0 +1,17 @@
+{
+  "name": "sienna-boilerplate-static",
+  "description": "Sienna's boilerplate templates, styles, and development environment",
+  "version": "0.0.1",
+  "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/siennamw/sienna-boilerplate-static",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-less": "^3.1.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-rsync": "0.0.6",
+    "gulp-webserver": "^0.9.1"
+  },
+}

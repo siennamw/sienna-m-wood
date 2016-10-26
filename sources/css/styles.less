@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Sienna M. Wood, 2016 */
+
+/*--------------------------------------------------------------
+# Fonts and Imports
+--------------------------------------------------------------*/
+@import '../sienna-boilerplate/sienna-boilerplate.less';
+@import (inline) 'font-awesome.css';
+
+/*--------------------------------------------------------------
+# Variables and Mixins
+--------------------------------------------------------------*/
+// Colors
+@primary: #32b975;
+@secondary: lighten(@dark-gray, 13.5%);
+@link-color: darken(@primary, 10%);
+@font-color: @dark-gray;
+@border-color: #bbb;
+@white: #FFF;
+@light-gray: #e1e1e1;
+@gray: #666;
+@dark-gray: #333;
+@black: #000;
+
+@base-url: "";
+
+.font-sans () {
+    font-family: @font-sans;
+    font-weight: normal;
+}
+
+.font-serif() {
+    font-family: "Georgia", "Times New Roman", serif;
+}
+
+.font-display() {
+    font-family: @font-sans;
+}
+
+.font-monospace() {
+    font-family: @font-mono;
+}
+
+.font-unicode() {
+    font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', @font-mono;
+}
+
+.body-bkgnd() {
+    color: @white;
+    background: @gray;
+}
+
+.main-bkgnd() {
+    color: @black;
+    background: @white;
+}
+
+.accent-bkgnd() {
+    color: @light-gray;
+    background: #111;
+}
