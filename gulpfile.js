@@ -68,7 +68,7 @@ gulp.task('copyCSS', ['less'], function () {
  * -----------------------------------*/
 gulp.task('copyJS', function () {
     gulp.src(['./sources/js/scripts.js',
-        './sources/sienna-boilerplate/sienna-boilerplate.js'])
+        './sienna-boilerplate/sienna-boilerplate.js'])
         .pipe(gulp.dest('./build/js')
     );
 });
