@@ -1,4 +1,4 @@
-[submodule "sources/sienna-boilerplate"]
-	path = sources/sienna-boilerplate
+[submodule "sienna-boilerplate"]
+	path = sienna-boilerplate
 	url = git@github.com:siennamw/sienna-boilerplate.git
 	ignore = dirty
