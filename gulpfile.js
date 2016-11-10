@@ -1,8 +1,4 @@
-/* Gulp definitions for Music Crash Courses
- *
- * Copyright (C) Sienna M. Wood 2016
- * 25 June 2016
- */
+/* Sienna M. Wood, 2016 */
 
 var gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
@@ -83,7 +79,7 @@ gulp.task('copyImages', function () {
 
 /* Local Server
  * ---------------------------------- */
-gulp.task('serve', function () {
+gulp.task('serve', ['build'], function () {
     gulp.src('build')
         .pipe(webserver({
             port: '9090',
