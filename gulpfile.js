@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 /* Build
  * -----------------------------------*/
-gulp.task('build', ['nunjucks', 'ext404', 'copyCSS', 'copyJS', 'copyImages']);
+gulp.task('build', ['nunjucks', 'ext404', 'copyCSS', 'copyJS', 'copyPHP', 'copyImages']);
 // also make this the default
 gulp.task('default', ['build']);
 
@@ -66,6 +66,14 @@ gulp.task('copyJS', function () {
     gulp.src(['./sources/js/scripts.js',
         './sienna-boilerplate/sienna-boilerplate.js'])
         .pipe(gulp.dest('./build/js')
+    );
+});
+
+/* Copy PHP to build
+ * -----------------------------------*/
+gulp.task('copyPHP', function () {
+    gulp.src('./sources/php/mail.php')
+        .pipe(gulp.dest('./build/php')
     );
 });
 
