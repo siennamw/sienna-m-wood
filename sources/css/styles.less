@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 /* Sienna M. Wood, 2016 */
-
 /*--------------------------------------------------------------
 # Fonts and Imports
 --------------------------------------------------------------*/
 @import '../../sienna-boilerplate/sienna-boilerplate.less';
+@import url('https://fonts.googleapis.com/css?family=Vidaloka');
 
 /*--------------------------------------------------------------
 # Variables and Mixins
@@ -13,14 +13,16 @@
 // Colors
 @primary: #d04422;
 @secondary: lighten(@dark-gray, 13.5%);
-@link-color: darken(@primary, 10%);
-@font-color: @dark-gray;
-@border-color: #bbb;
+
 @white: #FFF;
-@light-gray: #e1e1e1;
-@gray: #666;
-@dark-gray: #333;
-@black: #000;
+@light-gray: #bbb;
+@gray: #777;
+@dark-gray: #555;
+@black: #363636;
+
+@link-color: @primary;
+@font-color: @dark-gray;
+@border-color: @light-gray;
 
 @base-url: "";
 
@@ -34,7 +36,7 @@
 }
 
 .font-display() {
-    font-family: @font-sans;
+    font-family: "Vidaloka", @font-sans;
 }
 
 .font-monospace() {
@@ -45,17 +47,108 @@
     font-family: 'Arial Unicode MS', 'Lucida Sans Unicode', @font-mono;
 }
 
-.body-bkgnd() {
-    color: @white;
-    background: @gray;
-}
-
-.main-bkgnd() {
-    color: @black;
-    background: @white;
-}
-
-.accent-bkgnd() {
+body {
     color: @light-gray;
-    background: #111;
+    background: @black;
+}
+
+// Typography
+
+h1 {
+    .font-display();
+
+    #logo_link {
+        color: @white;
+    }
+}
+
+h2.subtitle {
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 100%;
+    margin: 0;
+}
+
+code {
+    background-color: transparent;
+    border-color: @dark-gray;
+}
+
+
+// Buttons
+
+button, input[type=button], input[type=submit], .button {
+    &:hover, &:active, &:focus {
+        color: @light-gray;
+    }
+}
+
+// Navigation
+
+nav#main-nav {
+    background-color: @gray;
+    margin: 2rem 0;
+    border-top: @primary solid .7rem;
+
+    .nav-toggle {
+        color: @light-gray;
+        margin: 0;
+    }
+
+    ul#nav-menu {
+        background: @gray;
+        margin-bottom: 4rem;
+
+        li {
+            a {
+                color: @black;
+
+                &.active {
+                    color: @white;
+                }
+
+                &:hover, &:focus, &.focus {
+                    color: @white;
+                    background-color: @primary;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @bp-larger-than-phablet) {
+    nav#main-nav {
+        background-color: @gray;
+        margin: 2rem 0;
+        border-top: @primary solid .7rem;
+
+        ul#nav-menu {
+            background: @gray;
+            margin-bottom: 0;
+
+            > li {
+                > a {
+                    color: @light-gray;
+
+                    &:hover, &:focus, &.focus, &.active {
+                        color: @white;
+                    }
+                }
+
+
+                ul li a {
+                    color: @dark-gray;
+
+                    &.active {
+                        color: @black;
+                    }
+
+                    &:hover, &:focus, &.focus {
+                        color: @white;
+                        background-color: @primary;
+                    }
+                }
+            }
+        }
+    }
 }
