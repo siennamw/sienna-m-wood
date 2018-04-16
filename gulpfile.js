@@ -76,7 +76,7 @@ gulp.task('watch:less', function() {
 });
 
 gulp.task('watch:html', function() {
-  gulp.watch('./sources/(content|templates)/**/*', ['nunjucks', 'ext404'])
+  gulp.watch(['./sources/templates/**/*', './sources/content/**/*'], ['nunjucks', 'ext404'])
 });
 
 /* Local Server
