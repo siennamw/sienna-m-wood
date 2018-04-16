@@ -46,10 +46,6 @@ gulp.task('less', function () {
     );
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./sources/css/*.+(less|css)', ['less'])
-});
-
 /* Copy JS to build
  * -----------------------------------*/
 gulp.task('copyJS', function () {
@@ -59,7 +55,7 @@ gulp.task('copyJS', function () {
     );
 });
 
-/* Copy Images to build (exclude image-resources directory)
+/* Copy Images to build
  * -----------------------------------*/
 gulp.task('copyImages', function () {
     gulp.src('./sources/images/**/*')
@@ -73,10 +69,19 @@ gulp.task('build', ['nunjucks', 'ext404', 'less', 'copyJS', 'copyImages']);
 // also make this the default
 gulp.task('default', ['build']);
 
+/* Watch
+ * ---------------------------------- */
+gulp.task('watch:less', function() {
+  gulp.watch('./sources/css/*.+(less|css)', ['less'])
+});
+
+gulp.task('watch:html', function() {
+  gulp.watch('./sources/(content|templates)/**/*', ['nunjucks', 'ext404'])
+});
 
 /* Local Server
  * ---------------------------------- */
-gulp.task('serve', ['build', 'watch'], function () {
+gulp.task('serve', ['build', 'watch:less', 'watch:html'], function () {
     gulp.src('build')
         .pipe(webserver({
             port: '9090',
