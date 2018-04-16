@@ -1,23 +1,32 @@
 <footer class="row">
-    <div class="four columns">
-        <h1>Dummy Content</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</p>
-    </div>
-    <div class="four columns">
-        <h1>Dummy Content</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</p>
-    </div>
-    <div class="four columns">
-        <h1>Dummy Content</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.</p>
-    </div>
+	<div class="container">
+		<div class="four columns">
+			<h1>Dummy Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore
+				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				nisi ut aliquip ex ea
+				commodo consequat.</p>
+		</div>
+		<div class="four columns">
+			<h1>Dummy Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore
+				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				nisi ut aliquip ex ea
+				commodo consequat.</p>
+		</div>
+		<div class="four columns">
+			<h1>Dummy Content</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore
+				magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				nisi ut aliquip ex ea
+				commodo consequat.</p>
+		</div>
+	</div>
 </footer>
 <div id="attr" class="row">
-    <p><a href="http://www.siennamwood.com/" target="_blank">Designed and Coded by Sienna M. Wood, 2016</a></p>
+	<p><a href="http://www.siennamwood.com/" target="_blank">Designed and Coded by Sienna M. Wood,
+		2018</a></p>
 </div>

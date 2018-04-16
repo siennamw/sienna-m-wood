@@ -1,59 +1,64 @@
-<header class="row">
-    <div id="logo">
-        <h1 class="title"><a href="/index.html" id="logo_link">Site Title</a></h1>
-    </div>
-    <nav id="main-nav">
-        <button class="nav-toggle" aria-expanded="false" onclick="toggleshow('#nav-menu');">Show/Hide Menu</button>
-        <ul id="nav-menu">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="#">Nested Menus</a>
-                <ul>
-                    <li><a href="#">Item</a>
-                        <ul>
-                            <li>
-                                <a href="#">Item</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Item</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Examples</a>
-                <ul>
-                    <li>
-                        <a href="#grid">Grid</a>
-                    </li>
-                    <li>
-                        <a href="#typography">Typography</a>
-                    </li>
-                    <li>
-                        <a href="#buttons">Buttons</a>
-                    </li>
-                    <li>
-                        <a href="#forms">Forms</a>
-                    </li>
-                    <li>
-                        <a href="#tables">Tables</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+<header>
+	<div id="logo" class="container">
+		<h1 class="title"><a href="/" id="logo_link">Sienna M. Wood</a></h1>
+		<h2 class="subtitle">Full-Stack Web Developer & Musicologist</h2>
+	</div>
+	<nav id="main-nav">
+		<div class="container">
+			<button class="nav-toggle" aria-expanded="false" onclick="toggleshow('#nav-menu');">
+				Show/Hide Menu
+			</button>
+			<ul id="nav-menu">
+				<li><a href="/">Home</a></li>
+				<li><a href="#">Nested Menus</a>
+					<ul>
+						<li><a href="#">Item</a>
+							<ul>
+								<li>
+									<a href="#">Item</a>
+									<ul>
+										<li>
+											<a href="#">Item</a>
+										</li>
+										<li>
+											<a href="#">Item</a>
+										</li>
+										<li>
+											<a href="#">Item</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Item</a>
+								</li>
+								<li>
+									<a href="#">Item</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Examples</a>
+					<ul>
+						<li>
+							<a href="#grid">Grid</a>
+						</li>
+						<li>
+							<a href="#typography">Typography</a>
+						</li>
+						<li>
+							<a href="#buttons">Buttons</a>
+						</li>
+						<li>
+							<a href="#forms">Forms</a>
+						</li>
+						<li>
+							<a href="#tables">Tables</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
 </header>

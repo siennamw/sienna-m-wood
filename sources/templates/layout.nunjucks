@@ -48,20 +48,20 @@
 
 </head>
 <body>
-<div class="container">
 
     <!-- Header and Navigation -->
     {% include "partials/header.nunjucks" %}
 
     <!-- Content -->
-    <div id="main_content" class="row">
-        {% block content %}
-        {% endblock %}
-    </div><!-- end #main_content -->
+    <div class="container">
+        <div id="main_content" class="row">
+            {% block content %}
+            {% endblock %}
+        </div><!-- end #main_content -->
+    </div><!-- end .container -->
 
     <!-- Footer -->
     {% include "partials/footer.nunjucks" %}
 
-</div><!-- end .container -->
 </body>
 </html>
