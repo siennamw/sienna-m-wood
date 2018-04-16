@@ -50,16 +50,16 @@
 body {
     color: @light-gray;
     background: @black;
+    font-size: 18px;
 }
 
 // Typography
-
-h1 {
+h1, h3, h4, h5, h6 {
     .font-display();
+}
 
-    #logo_link {
-        color: @white;
-    }
+h1 #logo_link {
+    color: @white;
 }
 
 h2.subtitle {
@@ -74,9 +74,30 @@ code {
     border-color: @dark-gray;
 }
 
+// Articles
+article {
+    padding: 2rem 0;
+    border-bottom: solid 1px @gray;
 
-// Buttons
+    h2 {
+        .font-sans();
+        color: @white;
+        margin: 0 0 3rem 0;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: 110%;
+    }
 
+    h3 {
+        margin-top: 0;
+    }
+
+    img {
+        max-width: 25rem;
+    }
+}
+
+// Buttons and Forms
 button, input[type=button], input[type=submit], .button {
     &:hover, &:active, &:focus {
         color: @light-gray;
@@ -84,10 +105,9 @@ button, input[type=button], input[type=submit], .button {
 }
 
 // Navigation
-
 nav#main-nav {
     background-color: @gray;
-    margin: 2rem 0;
+    margin: 2rem 0 4rem 0;
     border-top: @primary solid .7rem;
 
     .nav-toggle {
@@ -119,7 +139,6 @@ nav#main-nav {
 @media (min-width: @bp-larger-than-phablet) {
     nav#main-nav {
         background-color: @gray;
-        margin: 2rem 0;
         border-top: @primary solid .7rem;
 
         ul#nav-menu {
@@ -134,7 +153,6 @@ nav#main-nav {
                         color: @white;
                     }
                 }
-
 
                 ul li a {
                     color: @dark-gray;
@@ -151,4 +169,21 @@ nav#main-nav {
             }
         }
     }
+}
+
+// Footer
+footer #attr {
+    margin: 3rem 0;
+}
+
+// Tech stack icons and logos
+.tech-stack img {
+    display: inline-block;
+    height: 4rem;
+    margin: .5rem .5rem 2rem .5rem;
+}
+
+// Miscellaneous reusable classes
+.align-center {
+    text-align: center;
 }
