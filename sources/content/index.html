@@ -1,248 +1,118 @@
 {% extends "layout.nunjucks" %}
 {% block content %}
 
-<p>These styles are largely based on <a href="http://www.getskeleton.com" target="new">Dave Gamache's Skeleton
-    v2.0.4</a> and Seth Coelen's <a href="https://github.com/WhatsNewSaes/Skeleton-Less" target="new">Less Version
-    of Skeleton v2.0.4</a>, both distributed under the
-    <a href="http://www.opensource.org/licenses/mit-license.php" target="new">MIT license</a>. This project also
-    makes use of Nicolas Gallagher and Jonathan Neal's
-    <a href="http://necolas.github.io/normalize.css/" target="new">Normalize.css</a>, also distributed under the
-    <a href="http://www.opensource.org/licenses/mit-license.php" target="new">MIT license</a>.
-</p>
-
-<!-- Grid -->
-<style>
-    .example-grid .column, .example-grid .columns {
-        background-color: #EEE;
-        text-align: center;
-        border-radius: 4px;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
-    }
-</style>
-
-<div class="docs-section" id="grid">
-    <h1>The Grid</h1>
-    <div class="example-grid docs-example">
-        <div class="row">
-            <div class="one column">One</div>
-            <div class="eleven columns">Eleven</div>
-        </div>
-        <div class="row">
-            <div class="two columns">Two</div>
-            <div class="ten columns">Ten</div>
-        </div>
-        <div class="row">
-            <div class="three columns">Three</div>
-            <div class="nine columns">Nine</div>
-        </div>
-        <div class="row">
-            <div class="four columns">Four</div>
-            <div class="eight columns">Eight</div>
-        </div>
-        <div class="row">
-            <div class="five columns">Five</div>
-            <div class="seven columns">Seven</div>
-        </div>
-        <div class="row">
-            <div class="six columns">Six</div>
-            <div class="six columns">Six</div>
-        </div>
-        <div class="row">
-            <div class="seven columns">Seven</div>
-            <div class="five columns">Five</div>
-        </div>
-        <div class="row">
-            <div class="eight columns">Eight</div>
-            <div class="four  columns">Four</div>
-        </div>
-        <div class="row">
-            <div class="nine columns">Nine</div>
-            <div class="three columns">Three</div>
-        </div>
-        <div class="row">
-            <div class="ten columns">Ten</div>
-            <div class="two columns">Two</div>
-        </div>
-        <div class="row">
-            <div class="eleven columns">Eleven</div>
-            <div class="one column">One</div>
-        </div>
+<article id="about">
+  <p>I believe in writing elegant, human-friendly code that is efficient and scalable. I have
+    expertise in end-to-end, full-stack development and years of experience designing,
+    implementing, and deploying customer-facing websites.</p>
+  <div id="tech-stack" class="tech-stack align-center">
+    <img alt="JavaScript" src="/images/tech/js.png">
+    <img alt="React" src="/images/tech/react.png">
+    <img alt="Redux" src="/images/tech/redux.png">
+    <img alt="Node.js" src="/images/tech/nodejs.png">
+    <img alt="Ruby" src="/images/tech/ruby.png">
+    <img alt="Ruby on Rails" src="/images/tech/rails.png">
+    <img alt="SASS and SCSS" src="/images/tech/sass.png">
+    <img alt="LESS" src="/images/tech/less.png">
+    <img alt="Photoshop" src="/images/tech/photoshop.png">
+    <img alt="Illustrator" src="/images/tech/illustrator.png">
+  </div>
+</article>
+<article id="contact">
+  <h2>Contact</h2>
+  <dl>
+    <dt>Email</dt>
+    <dd><a href="mailto:sienna.m.wood@gmail.com">sienna.m.wood@gmail.com</a></dd>
+    <dt>GitHub</dt>
+    <dd><a href="https://github.com/siennamw">https://github.com/siennamw</a></dd>
+    <dt>LinkedIn</dt>
+    <dd><a href="https://www.linkedin.com/in/sienna-m-wood/">https://www.linkedin.com/in/sienna-m-wood/</a>
+    </dd>
+  </dl>
+</article>
+<article id="projects">
+  <h2>Projects</h2>
+  <div class="row">
+    <div class="nine columns">
+      <h3><i>Ouroboros</i></h3>
+      <p>Peer-to-peer, in-browser snake game co-created with Grant Reed.</p>
+      <div class="tech-stack">
+        <img alt="JavaScript" src="/images/tech/js.png">
+        <img alt="React" src="/images/tech/react.png">
+        <img alt="Redux" src="/images/tech/redux.png">
+        <img alt="Node.js" src="/images/tech/nodejs.png">
+        <img alt="SASS and SCSS" src="/images/tech/sass.png">
+      </div>
+      <ul>
+        <li><a href="https://ouroboros-game.herokuapp.com/" target="_blank">Demo</a></li>
+        <li><a href="https://github.com/ouroboros-team/ouroboros" target="_blank">GitHub</a></li>
+      </ul>
     </div>
-</div>
-
-<!-- Typography -->
-<div class="docs-section" id="typography">
-    <h1>Typography</h1>
-    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Ut aut
-        reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Animi,
-        id est laborum et dolorum fuga.</p>
-    <p>Quia <a href="">consequuntur magni dolores</a> eos qui ratione voluptatem sequi nesciunt. Et harum
-        quidem rerum facilis est et expedita distinctio. Temporibus autem quibusdam et aut officiis debitis aut
-        rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-    <blockquote>Blockquote here. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-        <cite>Steve Jobs – Apple Worldwide Developers’ Conference, 1997</cite>
-    </blockquote>
-    <ol>
-        <li>Eaque ipsa quae ab illo inventore veritatis et quasi.</li>
-        <li>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
-            <ol>
-                <li>Eaque ipsa quae ab illo inventore veritatis et quasi.</li>
-                <li>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
-                    <ol>
-                        <li>Eaque ipsa quae ab illo inventore veritatis et quasi.</li>
-                        <li>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</li>
-                        <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                            laboriosam.
-                        </li>
-                    </ol>
-                </li>
-                <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</li>
-            </ol>
+    <div class="three columns align-center">
+      <a href="https://ouroboros-game.herokuapp.com/" target="_blank">
+        <img alt="Ouroboros logo" src="/images/ouroboros.png">
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="nine columns">
+      <h3><i>nCoda</i></h3>
+      <p>Open-source software for encoding and engraving music documents.</p>
+      <div class="tech-stack">
+        <img alt="JavaScript" src="/images/tech/js.png">
+        <img alt="React" src="/images/tech/react.png">
+        <img alt="Redux" src="/images/tech/redux.png">
+        <img alt="LESS" src="/images/tech/less.png">
+      </div>
+      <ul>
+        <li><a href="https://ncodamusic.org/" target="_blank">Project Website</a></li>
+        <li><a href="https://github.com/nCoda" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="three columns align-center">
+      <a href="https://github.com/nCoda" target="_blank">
+        <img alt="nCoda logo" src="/images/nCoda-logo.png">
+      </a>
+    </div>
+  </div>
+</article>
+<article id="music">
+  <h2>Music Alter Ego</h2>
+  <div class="row">
+    <div class="eight columns">
+      <p>I hold a Ph.D. in Music from the University of Colorado at Boulder. My research,
+        publications, and conference presentations concern European music of the 15th and 16th
+        centuries. I am an experienced teacher of music at the undergraduate and graduate
+        levels.</p>
+      <ul>
+        <li><a href="https://rowman.com/ISBN/9781498546812" target="_blank">"Anti-Inquisition
+          Propaganda in Music at the Outbreak of the Dutch Revolt: No&eacute;
+          Faignient's <i>Chansons, madrigales et motetz</i>," in <i>Tyranny and Music</i></a></li>
+        <li><a href="http://pqdtopen.proquest.com/pubnum/3743677.html" target="_blank">"<i>Chansons,
+          madrigales & motetz à 3 parties</i> by Noé Faignient: A Composer's Debut in
+          16th-century Antwerp" (dissertation)</a></li>
+        <li>
+          <a href="http://www.oxfordbibliographies.com/view/document/obo-9780199757824/obo-9780199757824-0208.xml"
+             target="_blank">
+            “Liedekens, 15th- and 16th-Century Dutch Polyphonic Song,” in <i>Oxford Bibliographies
+            in Music</i></a></li>
+      </ul>
+      <p>At the intersection of software development and music research, I am involved in semantic
+        music encoding, digital edition-making, technology in music education, and the development
+        of software for these purposes.</p>
+      <ul>
+        <li><a href="https://github.com/nCoda" target="_blank"><i>nCoda</i></a></li>
+        <li><a href="http://www.musiccrashcourses.com/" target="_blank"><i>Music Crash
+          Courses</i></a></li>
+        <li><a href="http://music-encoding.org/" target="_blank">MEI: Music Encoding Initiative</a>
         </li>
-        <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</li>
-    </ol>
-
-    <h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</h2>
-    <blockquote>Blockquote here. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Corrupti quos dolores
-        et quas molestias excepturi sint occaecati. Nemo enim ipsam voluptatem quia
-        voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-        iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa.
-    </blockquote>
-    <p><cite>Steve Jobs</cite> – Apple Worldwide Developers’ Conference, 1997</p>
-    <p>Do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem. Facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa.</p>
-    <ul>
-        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
-        <li>Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate
-            velit esse quam.
-            <ol>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
-                <li>Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-                    voluptate
-                    velit esse quam.
-                    <ul>
-                        <li>Eaque ipsa quae ab illo inventore veritatis et quasi.</li>
-                        <li>Cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</li>
-                        <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                            laboriosam.
-                        </li>
-                    </ul>
-                </li>
-                <li>Architecto beatae vitae dicta sunt explicabo.</li>
-            </ol>
-
-        </li>
-        <li>Architecto beatae vitae dicta sunt explicabo.</li>
-    </ul>
-    <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h3>
-    <p>Corrupti quos dolores et quas molestias excepturi sint occaecati. Nemo enim ipsam voluptatem quia
-        voluptas sit aspernatur aut odit aut fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-        iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
-    <h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h4>
-    <p>Quia <a href="#">consequuntur magni dolores</a> eos qui ratione voluptatem sequi nesciunt. Et harum
-        quidem rerum facilis est et expedita distinctio. Temporibus autem quibusdam et aut officiis debitis aut
-        rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-    <h5>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h5>
-    <p>Quia <a href="#">consequuntur magni dolores</a> eos qui ratione voluptatem sequi nesciunt. Et harum
-        quidem rerum facilis est et expedita distinctio. Temporibus autem quibusdam et aut officiis debitis aut
-        rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-    <h6>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</h6>
-    <p>Quia <a href="#">consequuntur magni dolores</a> eos qui ratione voluptatem sequi nesciunt. Et harum
-        quidem rerum facilis est et expedita distinctio. Temporibus autem quibusdam et aut officiis debitis aut
-        rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-</div>
-
-<!-- Buttons -->
-<div class="docs-section" id="buttons">
-    <h1>Buttons</h1>
-    <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain,
-        whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a
-        number of appropriate form elements, but can also be arbitrarily attached to anchors with a
-        <code>.button</code> class.</p>
-    <div class="docs-example">
-        <div>
-            <a class="button" href="#">Anchor button</a>
-            <button>Button element</button>
-            <input type="submit" value="submit input">
-            <input type="button" value="button input">
-        </div>
-        <div>
-            <a class="button button-primary" href="#">Anchor button</a>
-            <button class="button-primary">Button element</button>
-            <input class="button-primary" type="submit" value="submit input">
-            <input class="button-primary" type="button" value="button input">
-        </div>
+        <li><a href="https://www.w3.org/community/music-notation/" target="_blank">W3C Music
+          Notation Community Group</a></li>
+      </ul>
     </div>
-</div>
-
-<!-- Forms -->
-<div class="docs-section" id="forms">
-    <h1>Forms</h1>
-    <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons
-        are normalized for a common height cross-browser so inputs can be stacked or placed alongside each
-        other.</p>
-    <div class="docs-example docs-example-forms">
-        <form>
-            <div class="row">
-                <div class="six columns">
-                    <label for="exampleEmailInput">Your email</label>
-                    <input class="u-full-width" type="email" placeholder="test@mailbox.com"
-                           id="exampleEmailInput">
-                </div>
-                <div class="six columns">
-                    <label for="exampleRecipientInput">Reason for contacting</label>
-                    <select class="u-full-width" id="exampleRecipientInput">
-                        <option value="Option 1">Questions</option>
-                        <option value="Option 2">Admiration</option>
-                        <option value="Option 3">Can I get your number?</option>
-                    </select>
-                </div>
-            </div>
-            <label for="exampleMessage">Message</label>
-            <textarea class="u-full-width" placeholder="Hi Dave &hellip;" id="exampleMessage"></textarea>
-            <label class="example-send-yourself-copy">
-                <input type="checkbox">
-                <span class="label-body">Check me!</span>
-            </label>
-            <input class="button-primary" type="submit" value="Submit">
-        </form>
+    <div class="four columns align-center">
+      <img alt="JavaScript" src="/images/CMMa3_18.jpg">
     </div>
-</div>
-
-<!-- Tables -->
-<div class="docs-section" id="tables">
-    <h1>Tables</h1>
-    <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>
-        &lt;tbody&gt;</code>
-        when building a <code>table</code>.</p>
-    <div class="docs-example">
-        <table class="u-full-width">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Sex</th>
-                <th>Location</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Dave Gamache</td>
-                <td>26</td>
-                <td>Male</td>
-                <td>San Francisco</td>
-            </tr>
-            <tr>
-                <td>Dwayne Johnson</td>
-                <td>42</td>
-                <td>Male</td>
-                <td>Hayward</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+  </div>
+</article>
 {% endblock %}
