@@ -1,10 +1,10 @@
 {
-  "name": "sienna-boilerplate-static",
-  "description": "Sienna's boilerplate templates, styles, and development environment",
+  "name": "sienna-m-wood",
+  "description": "Personal website of Sienna M. Wood",
   "version": "0.0.1",
   "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/siennamw/sienna-boilerplate-static",
+  "repository": "https://github.com/siennamw/sienna-m-wood",
   "devDependencies": {
     "del": "^2.2.1",
     "gulp": "^3.9.1",
