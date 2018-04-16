@@ -10,12 +10,6 @@ var gulp = require('gulp'),
     rsync = require('gulp-rsync');
 
 
-/* Build
- * -----------------------------------*/
-gulp.task('build', ['nunjucks', 'ext404', 'copyCSS', 'copyJS', 'copyPHP', 'copyImages']);
-// also make this the default
-gulp.task('default', ['build']);
-
 /* Nunjucks
  * -----------------------------------*/
 gulp.task('nunjucks', function () {
@@ -48,16 +42,12 @@ gulp.task('less', function () {
         .pipe(less({
             paths: [gpath.join(__dirname, 'less', 'includes')]
         }))
-        .pipe(gulp.dest('./sources/css')
+      .pipe(gulp.dest('./build/css')
     );
 });
 
-/* Copy compiled CSS to build
- * -----------------------------------*/
-gulp.task('copyCSS', ['less'], function () {
-    gulp.src('./sources/css/styles.css')
-        .pipe(gulp.dest('./build/css')
-    );
+gulp.task('watch', function() {
+  gulp.watch('./sources/css/*.+(less|css)', ['less'])
 });
 
 /* Copy JS to build
@@ -69,14 +59,6 @@ gulp.task('copyJS', function () {
     );
 });
 
-/* Copy PHP to build
- * -----------------------------------*/
-gulp.task('copyPHP', function () {
-    gulp.src('./sources/php/mail.php')
-        .pipe(gulp.dest('./build/php')
-    );
-});
-
 /* Copy Images to build (exclude image-resources directory)
  * -----------------------------------*/
 gulp.task('copyImages', function () {
@@ -85,17 +67,20 @@ gulp.task('copyImages', function () {
     );
 });
 
+/* Build
+ * -----------------------------------*/
+gulp.task('build', ['nunjucks', 'ext404', 'less', 'copyJS', 'copyImages']);
+// also make this the default
+gulp.task('default', ['build']);
+
+
 /* Local Server
  * ---------------------------------- */
-gulp.task('serve', ['build'], function () {
+gulp.task('serve', ['build', 'watch'], function () {
     gulp.src('build')
         .pipe(webserver({
             port: '9090',
             livereload: true,
-            directoryListing: {
-                enable: true,
-                path: 'build'
-            },
             open: true
         })
     );
