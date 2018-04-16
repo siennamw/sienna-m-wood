@@ -5,14 +5,14 @@
     <!-- Basic Page Needs -->
     <meta charset="utf-8"/>
     <meta name="description"
-          content=""/>
+          content="Full-stack web developer and musicologist in the Boulder/Denver area"/>
     <meta name="keywords"
-          content=""/>
+          content="sienna, wood, engineer, developer, coder, full-stack, front-end, design, website,
+          music, musicology, musicologist, boulder, denver, colorado"/>
     <meta name="author"
           content="Sienna M. Wood"/>
 
-    <!-- TODO: allow page title to change on individual pages -->
-    <title>Site Title</title>
+    <title>Sienna M. Wood</title>
 
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -43,7 +43,6 @@
     <!-- Custom JS -->
     <script src="/js/scripts.js"></script>
 
-    <!-- TODO: allow page-specific head material -->
     <!-- Page-Specific Head Material -->
 
 </head>
