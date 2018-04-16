@@ -1,14 +1,5 @@
 node_modules
-
-# Compiled CSS in sources
-sources/css/styles.css
-sources/sienna-boilerplate/sienna-boilerplate.css
+image-resources
 
 # Collected and compiled files in build
 build/**
-
-# image-resources except .psd, .ai, and .svg
-sources/image-resources/**
-!sources/image-resources/*.psd
-!sources/image-resources/*.ai
-!sources/image-resources/*.svg
