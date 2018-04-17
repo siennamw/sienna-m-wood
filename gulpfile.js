@@ -26,17 +26,6 @@ gulp.task('nunjucks', function () {
     );
 });
 
-/* Change extension on 404 to .shtml
- * -----------------------------------*/
-gulp.task('ext404', ['nunjucks'], function () {
-    gulp.src('./build/404.html')
-        .pipe(ext_replace('.shtml'))
-        .pipe(gulp.dest('./build'));
-    return del([
-        './build/404.html'
-    ]);
-});
-
 /* Compile LESS to sources
  * -----------------------------------*/
 gulp.task('less', function () {
@@ -67,7 +56,7 @@ gulp.task('copyImages', function () {
 
 /* Build
  * -----------------------------------*/
-gulp.task('build', ['nunjucks', 'ext404', 'less', 'copyJS', 'copyImages']);
+gulp.task('build', ['nunjucks', 'less', 'copyJS', 'copyImages']);
 // also make this the default
 gulp.task('default', ['build']);
 
@@ -78,7 +67,7 @@ gulp.task('watch:less', function() {
 });
 
 gulp.task('watch:html', function() {
-  gulp.watch(['./sources/templates/**/*', './sources/content/**/*'], ['nunjucks', 'ext404'])
+  gulp.watch(['./sources/templates/**/*', './sources/content/**/*'], ['nunjucks'])
 });
 
 /* Local Server
