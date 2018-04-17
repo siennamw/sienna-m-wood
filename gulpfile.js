@@ -94,7 +94,7 @@ gulp.task('serve', ['build', 'watch:less', 'watch:html'], function () {
 /* Deploy
  * -----------------------------------*/
 gulp.task('deploy', ['build'], function () {
-    return gulp.src('build/**')
+    return gulp.src('build/**/*')
         .pipe(rsync({
             root: 'build/',
             hostname: 'HOSTNAME',
