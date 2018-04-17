@@ -7,6 +7,7 @@
   "repository": "https://github.com/siennamw/sienna-m-wood",
   "devDependencies": {
     "del": "^2.2.1",
+    "dotenv": "^5.0.1",
     "gulp": "^3.9.1",
     "gulp-ext-replace": "^0.3.0",
     "gulp-less": "^3.1.0",

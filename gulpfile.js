@@ -1,13 +1,15 @@
 /* Sienna M. Wood, 2016 */
 
-var gulp = require('gulp'),
-    nunjucksRender = require('gulp-nunjucks-render'),
-    less = require('gulp-less'),
-    ext_replace = require('gulp-ext-replace'),
-    del = require('del'),
-    gpath = require('path'),
-    webserver = require('gulp-webserver'),
-    rsync = require('gulp-rsync');
+require('dotenv').config();
+
+var gulp = require('gulp');
+var nunjucksRender = require('gulp-nunjucks-render');
+var less = require('gulp-less');
+var ext_replace = require('gulp-ext-replace');
+var del = require('del');
+var gpath = require('path');
+var webserver = require('gulp-webserver');
+var rsync = require('gulp-rsync');
 
 
 /* Nunjucks
@@ -97,8 +99,8 @@ gulp.task('deploy', ['build'], function () {
     return gulp.src('build/**/*')
         .pipe(rsync({
             root: 'build/',
-            hostname: 'HOSTNAME',
-            destination: 'public_html/SITENAME'
+            hostname: process.env.HOSTNAME,
+            destination: process.env.DESTINATION
         })
     );
 });

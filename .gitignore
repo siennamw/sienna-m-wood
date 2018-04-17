@@ -3,3 +3,6 @@ image-resources
 
 # Collected and compiled files in build
 build/**
+
+# Private data
+.env
