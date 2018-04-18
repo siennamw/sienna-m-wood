@@ -1,7 +1,7 @@
 <header>
 	<div id="logo" class="container">
 		<h1 class="title"><a href="/" id="logo_link">Sienna M. Wood</a></h1>
-		<h2 class="subtitle">full-stack web developer</h2>
+		<h2 class="subtitle">full-stack software engineer</h2>
 	</div>
 	<nav id="main-nav">
 		<div class="container">
