@@ -97,11 +97,17 @@ article {
     }
 }
 
-// Buttons and Forms
+// Forms, Lists
 button, input[type=button], input[type=submit], .button {
     &:hover, &:active, &:focus {
         color: @light-gray;
     }
+}
+
+#main_content ul, #main_content ol {
+    list-style-position: inside;
+    margin-left: 3rem;
+    text-indent: -3rem;
 }
 
 // Navigation
