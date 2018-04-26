@@ -16,7 +16,7 @@ var rsync = require('gulp-rsync');
  * -----------------------------------*/
 gulp.task('nunjucks', function () {
     // Gets .html, .shtml, and .nunjucks files in sources/content
-    return gulp.src('./sources/content/**/*.+(html|shtml|nunjucks)')
+    return gulp.src(['./sources/content/**/*.+(html|shtml|nunjucks)', '!./sources/content/demo.html'])
     // Renders template with nunjucks
         .pipe(nunjucksRender({
             path: ['./sources/templates']
