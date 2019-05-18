@@ -187,10 +187,15 @@ footer #attr {
 }
 
 // Tech stack icons and logos
-.tech-stack img {
-    display: inline-block;
-    height: 4rem;
-    margin: .5rem .5rem 2rem .5rem;
+.tech-stack {
+    & > * {
+        display: inline-block;
+    }
+    img {
+        display: inline-block;
+        height: 4rem;
+        margin: .5rem .5rem 2rem .5rem;
+    }
 }
 
 // Headshot
