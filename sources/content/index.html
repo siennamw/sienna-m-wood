@@ -2,347 +2,485 @@
 {% block content %}
 
 <article id="contact">
-    <div class="row">
-        <div class="five columns align-center">
-            <img class="headshot" alt="Sienna M. Wood" src="/images/sienna.jpg">
-        </div>
-        <div class="seven columns">
-            <dl>
-                <dt>Email</dt>
-                <dd>
-                    <a href="mailto:sienna.m.wood@gmail.com" target="_blank"
-                       rel="noopener noreferrer">
-                        sienna.m.wood@gmail.com
-                    </a>
-                </dd>
-                <dt>GitHub</dt>
-                <dd>
-                    <a href="https://github.com/siennamw" target="_blank"
-                       rel="noopener noreferrer">
-                        https://github.com/siennamw
-                    </a>
-                </dd>
-                <dt>LinkedIn</dt>
-                <dd>
-                    <a href="https://www.linkedin.com/in/sienna-m-wood/"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        https://www.linkedin.com/in/sienna-m-wood/
-                    </a>
-                </dd>
-            </dl>
-        </div>
+  <div class="row">
+    <div class="five columns align-center">
+      <img
+        class="headshot"
+        alt="Sienna M. Wood"
+        src="/images/sienna.jpg"
+      >
     </div>
+    <div class="seven columns">
+      <dl>
+        <dt>Email</dt>
+        <dd>
+          <a
+            href="mailto:sienna.m.wood@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            sienna.m.wood@gmail.com
+          </a>
+        </dd>
+        <dt>GitHub</dt>
+        <dd>
+          <a
+            href="https://github.com/siennamw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://github.com/siennamw
+          </a>
+        </dd>
+        <dt>LinkedIn</dt>
+        <dd>
+          <a
+            href="https://www.linkedin.com/in/sienna-m-wood/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.linkedin.com/in/sienna-m-wood/
+          </a>
+        </dd>
+      </dl>
+    </div>
+  </div>
 </article>
 <article id="about">
-    <h2>About</h2>
-    <p>
-        I write code that is human-friendly, testable, and robust.
-        I tackle challenges by developing a deep understanding of the problems and designing efficient, stable, and forward-looking solutions.
-        I am an insatiable learner and thrive in collaboration.
-        I have expertise in end-to-end, full-stack engineering and years of experience designing, building, and deploying web applications.
-    </p>
-<!--    <div id="tech-stack" class="tech-stack align-center">-->
-<!--        <div>-->
-<!--            <img alt="JavaScript" title="JavaScript" src="/images/logos/js.png">-->
-<!--            <img alt="React" title="React" src="/images/logos/react.png">-->
-<!--            <img alt="GraphQL" title="GraphQL" src="/images/logos/graphql.png">-->
-<!--            <img alt="Redux" title="Redux" src="/images/logos/redux.png">-->
-<!--            <img alt="Node.js" title="Node.js" src="/images/logos/nodejs.png">-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <img alt="Ruby" title="Ruby" src="/images/logos/ruby.png">-->
-<!--            <img alt="Ruby on Rails" title="Ruby on Rails"-->
-<!--                 src="/images/logos/rails.png">-->
-<!--            <img alt="Sinatra" title="Sinatra" src="/images/logos/sinatra.png">-->
-<!--        </div>-->
-<!--        <img alt="PostgreSQL" title="PostgreSQL" src="/images/logos/psql.png">-->
-<!--        <div>-->
-<!--            <img alt="SCSS" title="SCSS" src="/images/logos/sass.png">-->
-<!--            <img alt="LESS" title="LESS" src="/images/logos/less.png">-->
-<!--        </div>-->
-<!--        <div>-->
-<!--            <img alt="Adobe Photoshop" title="Adobe Photoshop"-->
-<!--                 src="/images/logos/photoshop.png">-->
-<!--            <img alt="Adobe Illustrator" title="Adobe Illustrator"-->
-<!--                 src="/images/logos/illustrator.png">-->
-<!--        </div>-->
-<!--    </div>-->
+  <h2>About</h2>
+  <p>
+    I write code that is human-friendly, testable, and robust.
+    I tackle challenges by developing a deep understanding of the problems and designing efficient,
+    stable, and forward-looking solutions.
+    I am an insatiable learner and thrive in collaboration.
+    I have expertise in end-to-end, full-stack engineering and years of experience designing,
+    building, and deploying web applications.
+  </p>
 </article>
 <article id="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
 
-    <div class="row">
-        <div class="three columns align-center">
-            <a href="https://github.com/siennamw/c2m2" target="_blank"
-               rel="noopener noreferrer">
-                <img alt="C2M2 logo" src="/images/c2m2.png">
-            </a>
-        </div>
-        <div class="nine columns">
-            <h3>C2M2: Collections of Cinema and Media Music</h3>
-            <div class="tech-stack">
-                <img alt="JavaScript" title="JavaScript"
-                     src="/images/logos/js.png">
-                <img alt="React" title="React" src="/images/logos/react.png">
-                <img alt="GraphQL" title="GraphQL"
-                     src="/images/logos/graphql.png">
-                <img alt="LESS" title="LESS" src="/images/logos/less.png">
-                <img alt="Ruby" title="Ruby" src="/images/logos/ruby.png">
-                <img alt="Rails" title="Rails" src="/images/logos/rails.png">
-                <img alt="PostgreSQL" title="PostgreSQL"
-                     src="/images/logos/psql.png">
-            </div>
-            <p>Database of archival collections of film and media music.
-                Co-created with
-                librarian, archivist, and musicologist, <a
-                        href="http://www.michaelwharris.net/"
-                        target="_blank" rel="noopener noreferrer">
-                    Michael W. Harris, Ph.D.</a></p>
-            <ul>
-                <li>Currently in development</li>
-                <li>Rails back-end serves a GraphQL endpoint; React front-end
-                    uses Apollo client
-                </li>
-                <li>'Load more' functionality in lieu of pagination for
-                    browsing
-                </li>
-                <li>Simple and advanced search functions</li>
-                <li>Account management for contributing catalogers and
-                    administrators
-                </li>
-                <li>User interface for new entries provides inline search for
-                    related entries
-                </li>
-            </ul>
-            <div class="links">
-                <a class="button button-primary" href="https://github.com/siennamw/c2m2"
-                   target="_blank"
-                   rel="noopener noreferrer">GitHub</a>
-                <a class="button button-primary" href="http://www.c2m2.org/"
-                   target="_blank"
-                   rel="noopener noreferrer">Website (Info &amp; Placeholder)</a>
-            </div>
-        </div>
+  <div class="row">
+    <div class="three columns align-center">
+      <a
+        href="https://github.com/siennamw/c2m2"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          alt="C2M2 logo"
+          src="/images/c2m2.png"
+        >
+      </a>
     </div>
-
-    <div class="row">
-        <div class="three columns align-center">
-            <a href="https://ouroboros-app.herokuapp.com/about" target="_blank"
-               rel="noopener noreferrer">
-                <img alt="Ouroboros logo" src="/images/ouroboros.png">
-            </a>
-        </div>
-        <div class="nine columns">
-            <h3>Ouroboros</h3>
-            <div class="tech-stack">
-                <img alt="JavaScript" title="JavaScript"
-                     src="/images/logos/js.png">
-                <img alt="React" title="React" src="/images/logos/react.png">
-                <img alt="Redux" title="Redux" src="/images/logos/redux.png">
-                <img alt="Node.js" title="Node.js"
-                     src="/images/logos/nodejs.png">
-                <img alt="SCSS" title="SCSS" src="/images/logos/sass.png">
-            </div>
-            <p>Peer-to-peer, in-browser, multiplayer snake game. Created to
-                explore peer-to-peer
-                architectures and the challenges they present for a fast,
-                reflex-based game.</p>
-            <ul>
-                <li>Co-creator and end-to-end developer</li>
-                <li>Implemented conflict-free replicated data types (CRDTs)</li>
-                <li>Optimized for real-time multiplayer gaming</li>
-                <li>Used a predictive model for real-time effect in the presence
-                    of latency
-                </li>
-                <li>Researched and implemented the most efficient peer-to-peer
-                    network topology for our use
-                    case
-                </li>
-            </ul>
-            <div class="links">
-                <a href="https://youtu.be/39XU-OkN7lA?t=36m29s"
-                   class="button button-primary"
-                   target="_blank" rel="noopener noreferrer">
-                    Presentation Video
-                </a>
-                <a href="https://ouroboros-app.herokuapp.com/about"
-                   class="button button-primary"
-                   target="_blank" rel="noopener noreferrer">
-                    Deployment and Write Up
-                </a>
-                <a href="https://github.com/ouroboros-team/ouroboros"
-                   class="button button-primary"
-                   target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="three columns align-center">
-            <a href="https://github.com/nCoda" target="_blank"
-               rel="noopener noreferrer">
-                <img alt="nCoda logo" src="/images/nCoda-logo.png">
-            </a>
-        </div>
-        <div class="nine columns">
-            <h3>nCoda</h3>
-            <div class="tech-stack">
-                <img alt="JavaScript" title="JavaScript"
-                     src="/images/logos/js.png">
-                <img alt="React" title="React" src="/images/logos/react.png">
-                <img alt="Redux" title="Redux" src="/images/logos/redux.png">
-                <img alt="LESS" title="LESS" src="/images/logos/less.png">
-                <img alt="MEI: Music Encoding Initiative"
-                     title="MEI: Music Encoding Initiative"
-                     src="/images/logos/mei.png">
-                <img alt="Verovio" title="Verovio"
-                     src="/images/logos/verovio.png">
-            </div>
-            <p>Open-source software for encoding and engraving music
-                documents.</p>
-            <ul>
-                <li>Core contributor to open-source project</li>
-                <li>Implemented PDF viewer, background saving, and save status
-                    indicator
-                </li>
-                <li>Refactored toolbars as reusable components; improved
-                    usability and uniformity of UI
-                </li>
-            </ul>
-            <div class="links">
-                <a class="button button-primary" href="https://ncodamusic.org/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Project Website
-                </a>
-                <a class="button button-primary" href="https://github.com/nCoda"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <h3>mei-tools-atom</h3>
-    <div class="tech-stack">
-        <img alt="JavaScript" title="JavaScript" src="/images/logos/js.png">
-        <img alt="LESS" title="LESS" src="/images/logos/less.png">
-        <img alt="MEI: Music Encoding Initiative"
-             title="MEI: Music Encoding Initiative"
-             src="/images/logos/mei.png">
-        <img alt="Verovio" title="Verovio" src="/images/logos/verovio.png">
-    </div>
-    <p>Package (add-on) for the
-        <a href="https://atom.io/" target="_blank" rel="noopener noreferrer">Atom
-            text editor</a>.
-        Uses the <a href="http://www.verovio.org/" target="_blank"
-                    rel="noopener noreferrer"><i>Verovio</i></a>
-        music engraving library to provide on-the-fly music notation rendering
-        for <a href="http://music-encoding.org/" target="_blank"
-               rel="noopener noreferrer">MEI</a>, an
-        open-source XML system for the semantic encoding of music documents.</p>
-    <ul>
-        <li>Deployed to the official Atom package registry</li>
-        <li>Supports the use of Atom as a no-cost XML editor in the MEI
-            community
+    <div class="nine columns">
+      <h3>C2M2: Collections of Cinema and Media Music</h3>
+      <div class="tech-stack">
+        <img
+          alt="JavaScript"
+          title="JavaScript"
+          src="/images/logos/js.png"
+        >
+        <img
+          alt="React"
+          title="React"
+          src="/images/logos/react.png"
+        >
+        <img
+          alt="GraphQL"
+          title="GraphQL"
+          src="/images/logos/graphql.png"
+        >
+        <img
+          alt="LESS"
+          title="LESS"
+          src="/images/logos/less.png"
+        >
+        <img
+          alt="Ruby"
+          title="Ruby"
+          src="/images/logos/ruby.png"
+        >
+        <img
+          alt="Rails"
+          title="Rails"
+          src="/images/logos/rails.png"
+        >
+        <img
+          alt="PostgreSQL"
+          title="PostgreSQL"
+          src="/images/logos/psql.png"
+        >
+      </div>
+      <p>Database of archival collections of film and media music.
+        Co-created with
+        librarian, archivist, and musicologist, <a
+          href="http://www.michaelwharris.net/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Michael W. Harris, Ph.D.</a></p>
+      <ul>
+        <li>Currently in development</li>
+        <li>Rails back-end serves a GraphQL endpoint; React front-end
+          uses Apollo client
         </li>
-        <li>Lowers barriers to entry (cost, technical savvy) for new music
-            encoders
+        <li>'Load more' functionality in lieu of pagination for
+          browsing
         </li>
-    </ul>
-    <div class="links">
-        <a class="button button-primary"
-           href="https://github.com/nCoda/mei-tools-atom"
-           target="_blank" rel="noopener noreferrer">
-            GitHub
-        </a>
-        <a class="button button-primary"
-           href="https://atom.io/packages/mei-tools-atom" target="_blank"
-           rel="noopener noreferrer">
-            Atom Package Registry
-        </a>
+        <li>Simple and advanced search functions</li>
+        <li>Account management for contributing catalogers and
+          administrators
+        </li>
+        <li>User interface for new entries provides inline search for
+          related entries
+        </li>
+      </ul>
+      <div class="links">
+        <a
+          class="button button-primary"
+          href="https://github.com/siennamw/c2m2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+        <a
+          class="button button-primary"
+          href="http://www.c2m2.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Website (Info &amp; Placeholder)</a>
+      </div>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="three columns align-center">
+      <a
+        href="https://ouroboros-app.herokuapp.com/about"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          alt="Ouroboros logo"
+          src="/images/ouroboros.png"
+        >
+      </a>
+    </div>
+    <div class="nine columns">
+      <h3>Ouroboros</h3>
+      <div class="tech-stack">
+        <img
+          alt="JavaScript"
+          title="JavaScript"
+          src="/images/logos/js.png"
+        >
+        <img
+          alt="React"
+          title="React"
+          src="/images/logos/react.png"
+        >
+        <img
+          alt="Redux"
+          title="Redux"
+          src="/images/logos/redux.png"
+        >
+        <img
+          alt="Node.js"
+          title="Node.js"
+          src="/images/logos/nodejs.png"
+        >
+        <img
+          alt="SCSS"
+          title="SCSS"
+          src="/images/logos/sass.png"
+        >
+      </div>
+      <p>Peer-to-peer, in-browser, multiplayer snake game. Created to
+        explore peer-to-peer
+        architectures and the challenges they present for a fast,
+        reflex-based game.</p>
+      <ul>
+        <li>Co-creator and end-to-end developer</li>
+        <li>Implemented conflict-free replicated data types (CRDTs)</li>
+        <li>Optimized for real-time multiplayer gaming</li>
+        <li>Used a predictive model for real-time effect in the presence
+          of latency
+        </li>
+        <li>Researched and implemented the most efficient peer-to-peer
+          network topology for our use
+          case
+        </li>
+      </ul>
+      <div class="links">
+        <a
+          href="https://youtu.be/39XU-OkN7lA?t=36m29s"
+          class="button button-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Presentation Video
+        </a>
+        <a
+          href="https://ouroboros-app.herokuapp.com/about"
+          class="button button-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Deployment and Write Up
+        </a>
+        <a
+          href="https://github.com/ouroboros-team/ouroboros"
+          class="button button-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="three columns align-center">
+      <a
+        href="https://github.com/nCoda"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          alt="nCoda logo"
+          src="/images/nCoda-logo.png"
+        >
+      </a>
+    </div>
+    <div class="nine columns">
+      <h3>nCoda</h3>
+      <div class="tech-stack">
+        <img
+          alt="JavaScript"
+          title="JavaScript"
+          src="/images/logos/js.png"
+        >
+        <img
+          alt="React"
+          title="React"
+          src="/images/logos/react.png"
+        >
+        <img
+          alt="Redux"
+          title="Redux"
+          src="/images/logos/redux.png"
+        >
+        <img
+          alt="LESS"
+          title="LESS"
+          src="/images/logos/less.png"
+        >
+        <img
+          alt="MEI: Music Encoding Initiative"
+          title="MEI: Music Encoding Initiative"
+          src="/images/logos/mei.png"
+        >
+        <img
+          alt="Verovio"
+          title="Verovio"
+          src="/images/logos/verovio.png"
+        >
+      </div>
+      <p>Open-source software for encoding and engraving music
+        documents.</p>
+      <ul>
+        <li>Core contributor to open-source project</li>
+        <li>Implemented PDF viewer, background saving, and save status
+          indicator
+        </li>
+        <li>Refactored toolbars as reusable components; improved
+          usability and uniformity of UI
+        </li>
+      </ul>
+      <div class="links">
+        <a
+          class="button button-primary"
+          href="https://ncodamusic.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Project Website
+        </a>
+        <a
+          class="button button-primary"
+          href="https://github.com/nCoda"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <h3>mei-tools-atom</h3>
+  <div class="tech-stack">
+    <img
+      alt="JavaScript"
+      title="JavaScript"
+      src="/images/logos/js.png"
+    >
+    <img
+      alt="LESS"
+      title="LESS"
+      src="/images/logos/less.png"
+    >
+    <img
+      alt="MEI: Music Encoding Initiative"
+      title="MEI: Music Encoding Initiative"
+      src="/images/logos/mei.png"
+    >
+    <img
+      alt="Verovio"
+      title="Verovio"
+      src="/images/logos/verovio.png"
+    >
+  </div>
+  <p>Package (add-on) for the
+    <a
+      href="https://atom.io/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Atom
+      text editor</a>.
+    Uses the <a
+      href="http://www.verovio.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    ><i>Verovio</i></a>
+    music engraving library to provide on-the-fly music notation rendering
+    for <a
+      href="http://music-encoding.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >MEI</a>, an
+    open-source XML system for the semantic encoding of music documents.</p>
+  <ul>
+    <li>Deployed to the official Atom package registry</li>
+    <li>Supports the use of Atom as a no-cost XML editor in the MEI
+      community
+    </li>
+    <li>Lowers barriers to entry (cost, technical savvy) for new music
+      encoders
+    </li>
+  </ul>
+  <div class="links">
+    <a
+      class="button button-primary"
+      href="https://github.com/nCoda/mei-tools-atom"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>
+    <a
+      class="button button-primary"
+      href="https://atom.io/packages/mei-tools-atom"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Atom Package Registry
+    </a>
+  </div>
 </article>
 <article id="music">
-    <h2>Musicology</h2>
-    <div class="row">
-        <div class="three columns align-center">
-            <img src="/images/CMMa3_18.jpg">
-        </div>
-        <div class="nine columns">
-            <p>I hold a Ph.D. in Music from the University of Colorado at
-                Boulder. My research,
-                publications, and conference presentations concern European
-                music of the 15th and 16th
-                centuries. I am an experienced teacher of music at the
-                undergraduate and graduate
-                levels.</p>
-            <ul>
-                <li>
-                    <a href="https://rowman.com/ISBN/9781498546812"
-                       target="_blank" rel="noopener noreferrer">
-                        "Anti-Inquisition Propaganda in Music at the Outbreak of
-                        the Dutch Revolt: No&eacute;
-                        Faignient's <i>Chansons, madrigales et motetz</i>," in
-                        <i>Tyranny and Music</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://pqdtopen.proquest.com/pubnum/3743677.html"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        "<i>Chansons, madrigales & motetz à 3 parties</i> by Noé
-                        Faignient: A Composer's Debut
-                        in 16th-century Antwerp" (dissertation)
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.oxfordbibliographies.com/view/document/obo-9780199757824/obo-9780199757824-0208.xml"
-                       target="_blank" rel="noopener noreferrer">
-                        “Liedekens, 15th- and 16th-Century Dutch Polyphonic
-                        Song,” in <i>Oxford Bibliographies
-                        in Music</i>
-                    </a>
-                </li>
-            </ul>
-            <p>At the intersection of software development and music research, I
-                am involved in semantic
-                music encoding and digital edition-making, as well as the
-                development of tools for these
-                purposes and technologies for music education broadly.</p>
-            <ul>
-                <li>
-                    <a href="https://github.com/nCoda" target="_blank"
-                       rel="noopener noreferrer">
-                        <i>nCoda</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/nCoda/mei-tools-atom"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        MEI Tools for Atom
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/siennamw/c2m2" target="_blank"
-                       rel="noopener noreferrer">
-                        <i>C2M2</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/siennamw/music-crash-courses"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        <i>Music Crash Courses</i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+  <h2>Musicology</h2>
+  <div class="row">
+    <div class="three columns align-center">
+      <img src="/images/CMMa3_18.jpg">
     </div>
+    <div class="nine columns">
+      <p>I hold a Ph.D. in Music from the University of Colorado at
+        Boulder. My research,
+        publications, and conference presentations concern European
+        music of the 15th and 16th
+        centuries. I am an experienced teacher of music at the
+        undergraduate and graduate
+        levels.</p>
+      <ul>
+        <li>
+          <a
+            href="https://rowman.com/ISBN/9781498546812"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Anti-Inquisition Propaganda in Music at the Outbreak of
+            the Dutch Revolt: No&eacute;
+            Faignient's <i>Chansons, madrigales et motetz</i>," in
+            <i>Tyranny and Music</i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://pqdtopen.proquest.com/pubnum/3743677.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "<i>Chansons, madrigales & motetz à 3 parties</i> by Noé
+            Faignient: A Composer's Debut in 16th-century Antwerp" (dissertation)
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://www.oxfordbibliographies.com/view/document/obo-9780199757824/obo-9780199757824-0208.xml"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            “Liedekens, 15th- and 16th-Century Dutch Polyphonic
+            Song,” in <i>Oxford Bibliographies in Music</i>
+          </a>
+        </li>
+      </ul>
+      <p>At the intersection of software development and music research, I
+        am involved in semantic
+        music encoding and digital edition-making, as well as the
+        development of tools for these
+        purposes and technologies for music education broadly.</p>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/nCoda"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i>nCoda</i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/nCoda/mei-tools-atom"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MEI Tools for Atom
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/siennamw/c2m2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i>C2M2</i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/siennamw/music-crash-courses"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i>Music Crash Courses</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </article>
 {% endblock %}
