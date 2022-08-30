@@ -1,14 +1,10 @@
 /* Sienna M. Wood, 2016 */
 
-require('dotenv').config();
-
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 var less = require('gulp-less');
 var gpath = require('path');
 var webserver = require('gulp-webserver');
-var rsync = require('gulp-rsync');
-
 
 /* Nunjucks
  * -----------------------------------*/
@@ -76,18 +72,6 @@ gulp.task('serve', ['build', 'watch:less', 'watch:html'], function () {
             port: '9090',
             livereload: true,
             open: true
-        })
-    );
-});
-
-/* Deploy
- * -----------------------------------*/
-gulp.task('deploy', ['build'], function () {
-    return gulp.src('build/**/*')
-        .pipe(rsync({
-            root: 'build/',
-            hostname: process.env.HOSTNAME,
-            destination: process.env.DESTINATION
         })
     );
 });
