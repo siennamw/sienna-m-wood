@@ -5,8 +5,6 @@ require('dotenv').config();
 var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 var less = require('gulp-less');
-var ext_replace = require('gulp-ext-replace');
-var del = require('del');
 var gpath = require('path');
 var webserver = require('gulp-webserver');
 var rsync = require('gulp-rsync');
