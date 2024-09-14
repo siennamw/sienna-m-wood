@@ -11,7 +11,7 @@
 # Variables and Mixins
 --------------------------------------------------------------*/
 // Colors
-@primary: #d04422;
+@primary: lighten(sienna, 13%);
 @secondary: lighten(@dark-gray, 13.5%);
 
 @white: #FFF;
@@ -54,12 +54,17 @@ body {
 }
 
 // Typography
+a {
+    text-decoration: underline;
+}
+
 h1, h3, h4, h5, h6 {
     .font-display();
 }
 
 h1 #logo_link {
     color: @white;
+    text-decoration: none;
 }
 
 h2.subtitle {
@@ -103,8 +108,10 @@ article {
 
 // Forms, Lists
 button, input[type=button], input[type=submit], .button {
+    color: @white;
+
     &:hover, &:active, &:focus {
-        color: @light-gray;
+        color: @white;
     }
 }
 
@@ -116,7 +123,7 @@ button, input[type=button], input[type=submit], .button {
 
 // Navigation
 nav#main-nav {
-    background-color: @gray;
+    background-color: @dark-gray;
     margin: 2rem 0;
     border-top: @primary solid .7rem;
 
@@ -126,11 +133,11 @@ nav#main-nav {
     }
 
     ul#nav-menu {
-        background: @gray;
         margin-bottom: 4rem;
 
         li {
             a {
+                text-decoration: none;
                 color: @black;
 
                 &.active {
@@ -149,7 +156,6 @@ nav#main-nav {
 @media (min-width: @bp-larger-than-phablet) {
     nav#main-nav {
         ul#nav-menu {
-            background: @gray;
             margin-bottom: 0;
 
             > li {
