@@ -6,10 +6,8 @@
   "license": "MIT",
   "repository": "https://github.com/siennamw/sienna-m-wood",
   "scripts": {
-    "build": "npm run copyImagesToBuild && npm run copyJsToBuild && gulp build",
-    "copyImagesToBuild": "cp -a ./sources/images ./build/",
-    "copyJsToBuild": "mkdir -p ./build/js/ && cp ./sienna-boilerplate/sienna-boilerplate.js ./build/js/",
-    "start": "npm run copyImagesToBuild && npm run copyJsToBuild && gulp start"
+    "build": "gulp build",
+    "start": "gulp start"
   },
   "devDependencies": {
     "gulp": "^5.0.0",

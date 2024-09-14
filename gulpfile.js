@@ -23,6 +23,20 @@ const compileLess = () => {
   })).pipe(dest('./build/css'));
 };
 
+/* Copy JS to build
+ * -----------------------------------*/
+const copyJS = () => {
+  return src([
+    './sienna-boilerplate/sienna-boilerplate.js'
+  ]).pipe(dest('./build/js'));
+};
+
+/* Copy Images to build
+ * -----------------------------------*/
+const copyImages = () => {
+  return src('./sources/images/**/*', {encoding: false}).pipe(dest('./build/images'));
+};
+
 /* Watch source files (for development)
  * -----------------------------------*/
 const watchSource = () => {
@@ -41,5 +55,5 @@ const serve = () => {
   }));
 };
 
-exports.build = parallel(compileLess, nunjucks);
-exports.start = parallel(watchSource, serve);
+exports.build = parallel(copyJS, copyImages, compileLess, nunjucks);
+exports.start = parallel(copyJS, copyImages, watchSource, serve);
