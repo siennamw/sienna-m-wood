@@ -5,13 +5,16 @@
   "author": "Sienna M. Wood <sienna.m.wood@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/siennamw/sienna-m-wood",
+  "scripts": {
+    "build": "npm run copyImagesToBuild && npm run copyJsToBuild && gulp build",
+    "copyImagesToBuild": "cp -a ./sources/images ./build/",
+    "copyJsToBuild": "mkdir -p ./build/js/ && cp ./sienna-boilerplate/sienna-boilerplate.js ./build/js/",
+    "start": "npm run copyImagesToBuild && npm run copyJsToBuild && gulp start"
+  },
   "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-ext-replace": "^0.3.0",
-    "gulp-less": "^3.1.0",
-    "gulp-nunjucks-render": "^2.0.0",
-    "gulp-rsync": "0.0.6",
-    "gulp-webserver": "^0.9.1"
+    "gulp": "^5.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-webserver": "^0.5.0"
   }
 }

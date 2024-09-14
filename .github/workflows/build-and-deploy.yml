@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           submodules: recursive
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
-          node-version: 8
+          node-version: 20
       - name: Install dependencies
         run: npm install
       - name: Install submodule dependencies
@@ -23,7 +23,7 @@ jobs:
           npm install
           cd ../
       - name: Build
-        run: gulp build
+        run: npm run build
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v2
         with:
@@ -31,4 +31,4 @@ jobs:
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           localDir: "build"
-          remoteDir: ${{ secrets.FTP_DIRECTORY }}
+          remoteDir: "siennamwood.com"

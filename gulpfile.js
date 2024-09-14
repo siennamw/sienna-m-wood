@@ -1,77 +1,45 @@
-/* Sienna M. Wood, 2016 */
-
-var gulp = require('gulp');
-var nunjucksRender = require('gulp-nunjucks-render');
-var less = require('gulp-less');
-var gpath = require('path');
-var webserver = require('gulp-webserver');
+const {src, dest, parallel, watch} = require('gulp');
+const less = require('gulp-less');
+const nunjucksRender = require('gulp-nunjucks-render');
+const webserver = require('gulp-webserver');
 
 /* Nunjucks
  * -----------------------------------*/
-gulp.task('nunjucks', function () {
-    // Gets .html, .shtml, and .nunjucks files in sources/content
-    return gulp.src(['./sources/content/**/*.+(html|shtml|nunjucks)', '!./sources/content/demo.html'])
+const nunjucks = async () => {
+  // Gets .html, .shtml, and .nunjucks files in sources/content
+  return src([
+    './sources/content/**/*.+(html|shtml|nunjucks)'
+  ]).pipe(nunjucksRender({
     // Renders template with nunjucks
-        .pipe(nunjucksRender({
-            path: ['./sources/templates']
-        }))
-        // output files in build folder
-        .pipe(gulp.dest('./build')
-    );
-});
+    path: ['./sources/templates']
+  })).pipe(dest('./build')); // output files in build folder
+};
 
 /* Compile LESS to sources
  * -----------------------------------*/
-gulp.task('less', function () {
-    return gulp.src('./sources/css/*.+(less|css)')
-        .pipe(less({
-            paths: [gpath.join(__dirname, 'less', 'includes')]
-        }))
-      .pipe(gulp.dest('./build/css')
-    );
-});
+const compileLess = () => {
+  return src('./sources/css/*.+(less|css)').pipe(less({
+    paths: ['./sienna-boilerplate/']
+  })).pipe(dest('./build/css'));
+};
 
-/* Copy JS to build
+/* Watch source files (for development)
  * -----------------------------------*/
-gulp.task('copyJS', function () {
-    gulp.src(['./sources/js/scripts.js',
-        './sienna-boilerplate/sienna-boilerplate.js'])
-        .pipe(gulp.dest('./build/js')
-    );
-});
-
-/* Copy Images to build
- * -----------------------------------*/
-gulp.task('copyImages', function () {
-    gulp.src('./sources/images/**/*')
-        .pipe(gulp.dest('./build/images')
-    );
-});
-
-/* Build
- * -----------------------------------*/
-gulp.task('build', ['nunjucks', 'less', 'copyJS', 'copyImages']);
-// also make this the default
-gulp.task('default', ['build']);
-
-/* Watch
- * ---------------------------------- */
-gulp.task('watch:less', function() {
-  gulp.watch('./sources/css/*.+(less|css)', ['less'])
-});
-
-gulp.task('watch:html', function() {
-  gulp.watch(['./sources/templates/**/*', './sources/content/**/*'], ['nunjucks'])
-});
+const watchSource = () => {
+  watch([
+    './sources/templates/**/*',
+    './sources/content/**/*'
+  ], {ignoreInitial: false}, nunjucks);
+  watch('./sources/css/**/*', {ignoreInitial: false}, compileLess);
+};
 
 /* Local Server
  * ---------------------------------- */
-gulp.task('serve', ['build', 'watch:less', 'watch:html'], function () {
-    gulp.src('build')
-        .pipe(webserver({
-            port: '9090',
-            livereload: true,
-            open: true
-        })
-    );
-});
+const serve = () => {
+  return src('build').pipe(webserver({
+    port: '9090', livereload: true, open: true
+  }));
+};
+
+exports.build = parallel(compileLess, nunjucks);
+exports.start = parallel(watchSource, serve);
