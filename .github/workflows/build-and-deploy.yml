@@ -23,7 +23,7 @@ jobs:
           npm install
           cd ../
       - name: Build
-        run: gulp build
+        run: npm run build
       - name: Upload ftp
         uses: sebastianpopp/ftp-action@releases/v2
         with:
